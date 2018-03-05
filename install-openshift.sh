@@ -5,7 +5,7 @@
 export DOMAIN=${DOMAIN:="192.168.106.2"}
 export USERNAME=${USERNAME:="$(whoami)"}
 export PASSWORD=${PASSWORD:=voleak}
-export VERSION=${VERSION:="v3.7.1
+export VERSION=${VERSION:="v3.7.1"
 
 export SCRIPT_REPO=${SCRIPT_REPO:="https://raw.githubusercontent.com/thol-voleak/installcentos/master"}
 
