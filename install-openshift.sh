@@ -62,13 +62,14 @@ fi
 
 systemctl restart docker
 systemctl enable docker
-
+echo "******z1"
 if [ ! -f ~/.ssh/id_rsa ]; then
+echo "******z1.1"
 	ssh-keygen -q -f ~/.ssh/id_rsa -N ""
 	cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 	ssh -o StrictHostKeyChecking=no -p 7735 root@$IP "pwd" < /dev/null
 fi
-
+echo "******z2"
 export METRICS="True"
 export LOGGING="True"
 
