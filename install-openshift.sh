@@ -2,12 +2,12 @@
 
 ## see: https://www.youtube.com/watch?v=-OOnGK-XeVY
 
-export DOMAIN=${DOMAIN:="$(curl ipinfo.io/ip).nip.io"}
+export DOMAIN=${DOMAIN:="192.168.106.2"}
 export USERNAME=${USERNAME:="$(whoami)"}
-export PASSWORD=${PASSWORD:=password}
-export VERSION=${VERSION:="v3.7.1"}
+export PASSWORD=${PASSWORD:=voleak}
+export VERSION=${VERSION:="v3.6"}
 
-export SCRIPT_REPO=${SCRIPT_REPO:="https://raw.githubusercontent.com/gshipley/installcentos/master"}
+export SCRIPT_REPO=${SCRIPT_REPO:="https://raw.githubusercontent.com/thol-voleak/installcentos/master"}
 
 export IP="$(ip route get 8.8.8.8 | awk '{print $NF; exit}')"
 
