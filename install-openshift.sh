@@ -56,7 +56,7 @@ else
 	systemctl stop docker
 
 	rm -rf /var/lib/docker
-	wipefs --all $DISK
+	wipefs --force $DISK
 	docker-storage-setup
 fi
 
@@ -66,7 +66,7 @@ systemctl enable docker
 if [ ! -f ~/.ssh/id_rsa ]; then
 	ssh-keygen -q -f ~/.ssh/id_rsa -N ""
 	cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-	ssh -o StrictHostKeyChecking=no root@$IP "pwd" < /dev/null
+	ssh -o StrictHostKeyChecking=no -p 7735 root@$IP "pwd" < /dev/null
 fi
 
 export METRICS="True"
