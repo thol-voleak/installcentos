@@ -3,7 +3,7 @@
 ## see: https://www.youtube.com/watch?v=-OOnGK-XeVY
 
 export DOMAIN=${DOMAIN:="192.168.106.2"}
-export USERNAME=${USERNAME:="$(whoami)"}
+export USERNAME=${USERNAME:="voleak"}
 export PASSWORD=${PASSWORD:=voleak}
 export VERSION=${VERSION:="v3.7.1"}
 
